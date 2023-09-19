@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/** ------------- HEADER ------------- **/
+
+.header {
+  height: 4rem;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  opacity: 1;
+}
+
+.header-nav {
+  text-align: right;
+  font-size: 1rem;
+}
+
+/** ------------DROPDOWN MENU --------------**/
+
+.header-to-top-button {
+  background-color: rgb(182, 182, 182);
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1.5;
+}
+
+.header-menu-button {
+  background-color: rgb(182, 182, 182);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1.5;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgb(204, 204, 204);
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/** ------------- BODY ------------- **/
+
+body {
+  background-color: black;
+}
+
+.block1-color {
+  background-color: rgb(68, 107, 107);
+}
+
+.block2-color {
+  background-color: rgb(56, 88, 88);
+}
+
+.block3-color {
+  background-color: rgb(48, 75, 75);
+}
+
+.block4-color {
+  background-color: rgb(37, 58, 58);
+}
+
+.block5-color {
+  background-color: rgb(28, 44, 44);
+}
+
+.block-content {
+  padding: 1rem;
+  height: 100dvh;
+}
+
+.main-scroll-button {
+  display: none;
+}
+
+/**--------------- GALLERY -----------------**/
+
+h1,
+h2,
+q,
+a,
+p,
+button {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-images {
+  display: block;
+}
+
+.container-images div {
+  border-radius: 0.7rem;
+  padding: 10px;
+  margin: 1rem 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: black;
+}
+
+/** ------------- VIDEO PLAYER --------------**/
+
+iframe {
+  border-style: none;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+/** ------------- BIGGER SCREEN ----------------**/
+
+@media (min-width: 700px) {
+  .header {
+    opacity: 0.3;
+  }
+  .header:hover {
+    opacity: 1;
+    transition: 0.1s ease-out;
+  }
+  .block-content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+    padding: 0;
+    position: relative;
+  }
+
+  .dropdown-content a:hover {
+    background-color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .header-menu-button {
+    background-color: white;
+  }
+
+  .main-scroll-button {
+    display: inline-block;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  .main-scroll-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .header-to-top-button {
+    color: black;
+  }
+
+  .header-to-top-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .container-images {
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 3;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem;
+    width: 75%;
+    margin: auto;
+  }
+
+  .container-images div {
+    border-radius: 0.7rem;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .image1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+
+  .image2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+
+  .image3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+
+  .image4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+}
+
+/** ------------- BIGGEST SCREEN ----------------**/
