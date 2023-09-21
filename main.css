@@ -12,6 +12,19 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+q,
+a,
+p,
+button {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 /** ------------- HEADER ------------- **/
 
 .header {
@@ -20,32 +33,26 @@ html {
   position: sticky;
   top: 0;
   opacity: 1;
+  align-content: center;
 }
 
 .header-nav {
-  text-align: right;
+  display: flex;
+  justify-content: right;
   font-size: 1rem;
+  gap: 0.5rem;
 }
 
-/** ------------DROPDOWN MENU --------------**/
-
-.header-to-top-button {
+.header-to-top-button,
+.header-menu-button {
   background-color: rgb(182, 182, 182);
   color: black;
   padding: 1rem;
   font-size: 1rem;
   border: none;
-  border-radius: 1.5;
 }
 
-.header-menu-button {
-  background-color: rgb(182, 182, 182);
-  color: rgb(0, 0, 0);
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 1.5;
-}
+/** ------------DROPDOWN MENU --------------**/
 
 .dropdown {
   position: relative;
@@ -132,29 +139,6 @@ body {
 
 .svg-line {
   display: none;
-}
-
-/**--------------- GALLERY -----------------**/
-
-h1,
-h2,
-q,
-a,
-p,
-button {
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-h1 {
-  font-weight: 600;
-}
-
-h2 {
-  font-weight: 500;
-}
-
-a {
-  text-decoration: none;
 }
 
 /** ------------- BIGGER SCREEN ----------------**/
