@@ -78,7 +78,7 @@ body {
 }
 
 .block1-color {
-  background-color: white;
+  background-color: lightgray;
 }
 
 .block2-color {
@@ -130,6 +130,10 @@ body {
   display: none;
 }
 
+.svg-line {
+  display: none;
+}
+
 /**--------------- GALLERY -----------------**/
 
 h1,
@@ -151,30 +155,6 @@ h2 {
 
 a {
   text-decoration: none;
-}
-
-.container-images {
-  display: block;
-  opacity: 0.5;
-}
-
-.container-images div {
-  border-radius: 0.7rem;
-  padding: 10px;
-  margin: 1rem 0;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  background-color: black;
-}
-
-/** ------------- VIDEO PLAYER --------------**/
-
-iframe {
-  border-style: none;
-}
-
-.youtube-video {
-  aspect-ratio: 16 / 9;
-  width: 100%;
 }
 
 /** ------------- BIGGER SCREEN ----------------**/
@@ -229,47 +209,6 @@ iframe {
   .header-to-top-button:hover {
     background-color: white;
     color: black;
-  }
-
-  .container-images {
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: 3;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    padding: 1.5rem;
-    width: 75%;
-    margin: auto;
-  }
-
-  .container-images div {
-    border-radius: 0.7rem;
-    overflow: hidden;
-    margin: 0;
-  }
-
-  .image1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-  }
-
-  .image2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-  }
-
-  .image3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-  }
-
-  .image4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
   }
 }
 
