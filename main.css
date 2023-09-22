@@ -84,6 +84,15 @@ body {
   background-color: black;
 }
 
+.timeline {
+  border-left: 1rem dashed white;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  opacity: 50%;
+}
+
 .block1-color {
   background-color: lightgray;
 }
