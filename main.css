@@ -368,6 +368,7 @@ select {
   .section__keywords {
     grid-column: 2/3;
     grid-row: 4/4;
+    padding: 0.3rem;
   }
   .section__heading-images {
     grid-column: 2/2;
