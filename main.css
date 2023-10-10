@@ -41,7 +41,8 @@ html {
 
 body,
 textarea,
-select {
+select,
+input {
   font-family: "Anonymous Pro", monospace;
   background-color: var(--color-accent-6);
 }
@@ -143,7 +144,7 @@ h3 {
   white-space: nowrap;
 }
 
-.button-jump-dropdown:hover .button-jump-dropdown-content {
+.button-jump-dropdown:active .button-jump-dropdown-content {
   display: block;
 }
 
@@ -308,25 +309,34 @@ footer {
   margin-bottom: 1rem;
 }
 
-.input {
+input {
   width: 100%;
   padding: 0.2rem;
   margin-bottom: 0.3rem;
+  font-size: 1rem;
 }
 .request-type {
   width: 100%;
+  margin-bottom: 0.3rem;
 }
 textarea {
   width: 100%;
   height: 5rem;
   font-size: 1rem;
   padding: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 select {
   width: 100%;
   font-size: 0.9rem;
   padding: 0.3rem;
+}
+
+.footer__button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 43rem) {
