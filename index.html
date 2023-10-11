@@ -25,28 +25,44 @@
             <div class="button-jump-dropdown">
               <a class="header__button header__button-jump">JUMP TO DAY</a>
               <div class="button-jump-dropdown-content">
-                <a href="#intro" class="button-jump-link">Intro</a>
-                <a href="#section-monday" class="button-jump-link"
-                  >Monday: Björnes Magasin</a
-                >
-                <a href="#section-tuesday" class="button-jump-link"
-                  >Tuesday: Hjärnkontoret</a
-                >
-                <a href="#section-wednesday" class="button-jump-link"
-                  >Wednesday: Alfons Åberg</a
-                >
-                <a href="#section-thursday" class="button-jump-link"
-                  >Thursday: Lilla aktuellt</a
-                >
-                <a href="#section-friday" class="button-jump-link"
-                  >Friday: Mumintrollet</a
-                >
-                <a href="#section-saturday" class="button-jump-link"
-                  >Saturday: 5 myror är fler än 4 elefanter</a
-                >
-                <a href="#section-sunday" class="button-jump-link"
-                  >Sunday: Skrotnisse och hans vänner</a
-                >
+                <ul>
+                  <li>
+                    <a href="#intro" class="button-jump-link">Intro</a>
+                    <a href="#section-monday" class="button-jump-link"
+                      >Monday: Björnes Magasin</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-tuesday" class="button-jump-link"
+                      >Tuesday: Hjärnkontoret</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-wednesday" class="button-jump-link"
+                      >Wednesday: Alfons Åberg</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-thursday" class="button-jump-link"
+                      >Thursday: Lilla aktuellt</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-friday" class="button-jump-link"
+                      >Friday: Mumintrollet</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-saturday" class="button-jump-link"
+                      >Saturday: 5 myror är fler än 4 elefanter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-sunday" class="button-jump-link"
+                      >Sunday: Skrotnisse och hans vänner</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </li>
@@ -122,7 +138,11 @@
         <h1>My week of TV shows in 1997</h1>
       </div>
 
-      <video class="intro-video" controls>
+      <video
+        class="intro-video"
+        controls
+        poster="images/alt_intro-video-img.png"
+      >
         <source src="video/shorter_intro.mp4" type="video/mp4" />
       </video>
 
@@ -133,9 +153,7 @@
       class="section__wrapper section__wrapper-bjornes-magasin"
       id="section-monday"
     >
-      <div class="section__heading-flex-container">
-        <h2 class="section__heading-weekday">MONDAY</h2>
-      </div>
+      <h2 class="section__heading-weekday">MONDAY</h2>
       <div class="section__content-grid-container">
         <h3 class="section__heading-time">18.00</h3>
         <h3 class="section__heading-titel">BJÖRNES MAGASIN</h3>
@@ -157,7 +175,7 @@
 
         <h3 class="section__heading-keywords">Keywords</h3>
         <p class="section__keywords">
-          #Bjorne #Snail #hugo #gingerbreadcookies
+          #bjorne #snail #hugo #gingerbreadcookies
         </p>
 
         <h3 class="section__heading-images">Images</h3>
@@ -202,16 +220,14 @@
       class="section__wrapper section__wrapper-hjarnkontoret"
       id="section-tuesday"
     >
-      <div class="section__heading-flex-container">
-        <h2 class="section__heading-weekday">TUESDAY</h2>
-      </div>
+      <h2 class="section__heading-weekday">TUESDAY</h2>
       <div class="section__content-grid-container">
         <h3 class="section__heading-time">18.30</h3>
         <h3 class="section__heading-titel">HJÄRNKONTORET</h3>
 
         <p class="section__paragraph">
-          Tuesday - maybe the worst day of the week? Mondays are so close to the
-          weekend it is still okay to chill a little, but when tuesday rolls
+          Tuesday - maybe the worst day of the week? Mondays are close to the
+          weekend so it is still okay to chill a little, but when tuesday rolls
           around it is time to get serious. <br /><br />That is probably why we
           got to watch Hjärnkontoret (translates to something like "The brain
           office") on this tuesday evening. In this show Victoria Dyring teaches
@@ -220,7 +236,9 @@
         <p class="section__paragraph"></p>
 
         <h3 class="section__heading-keywords">Keywords</h3>
-        <p class="section__keywords">#brainoffice #seriously #experiments</p>
+        <p class="section__keywords">
+          #brainoffice #serious #experiments #vacuumcleaner
+        </p>
 
         <h3 class="section__heading-images">Images</h3>
         <div class="gallery">
@@ -266,9 +284,7 @@
       class="section__wrapper section__wrapper-alfons-aberg"
       id="section-wednesday"
     >
-      <div class="section__heading-flex-container">
-        <h2 class="section__heading-weekday">WEDNESDAY</h2>
-      </div>
+      <h2 class="section__heading-weekday">WEDNESDAY</h2>
       <div class="section__content-grid-container">
         <h3 class="section__heading-time">18.30</h3>
         <h3 class="section__heading-titel">ALFONS ÅBERG</h3>
@@ -328,9 +344,7 @@
       class="section__wrapper section__wrapper-lilla-aktuellt"
       id="section-thursday"
     >
-      <div class="section__heading-flex-container">
-        <h2 class="section__heading-weekday">THURSDAY</h2>
-      </div>
+      <h2 class="section__heading-weekday">THURSDAY</h2>
       <div class="section__content-grid-container">
         <h3 class="section__heading-time">18.30</h3>
         <h3 class="section__heading-titel">LILLA AKTUELLT</h3>
@@ -393,9 +407,7 @@
       class="section__wrapper section__wrapper-mumin"
       id="section-friday"
     >
-      <div class="section__heading-flex-container">
-        <h2 class="section__heading-weekday">FRIDAY</h2>
-      </div>
+      <h2 class="section__heading-weekday">FRIDAY</h2>
       <div class="section__content-grid-container">
         <h3 class="section__heading-time">18.30</h3>
         <h3 class="section__heading-titel">MUMINTROLLET</h3>
@@ -408,8 +420,7 @@
           seashells. He lives with his mom and dad in the mumin-house, and
           during the winter they go into hibernation. <br />
           <br />
-          Mumins friends are Snorkfröken who Mumin is in love with, Sniff,
-          Snusmumriken and Lilla My.
+          Mumins friends are Snorkfröken, Sniff, Snusmumriken and Lilla My.
         </p>
 
         <h3 class="section__heading-keywords">Keywords</h3>
@@ -459,9 +470,7 @@
       class="section__wrapper section__wrapper-5-myror-ar-fler-an-5-elefanter"
       id="section-saturday"
     >
-      <div class="section__heading-flex-container">
-        <h2 class="section__heading-weekday">SATURDAY</h2>
-      </div>
+      <h2 class="section__heading-weekday">SATURDAY</h2>
       <div class="section__content-grid-container">
         <h3 class="section__heading-time">18.30</h3>
         <h3 class="section__heading-titel">5 MYROR ÄR FLER ÄN 4 ELEFANTER</h3>
@@ -524,9 +533,7 @@
       class="section__wrapper section__wrapper-skrotnisse"
       id="section-sunday"
     >
-      <div class="section__heading-flex-container">
-        <h2 class="section__heading-weekday">SUNDAY</h2>
-      </div>
+      <h2 class="section__heading-weekday">SUNDAY</h2>
       <div class="section__content-grid-container">
         <h3 class="section__heading-time">18.30</h3>
         <h3 class="section__heading-titel">Skrotnisse och hans vänner</h3>
@@ -547,9 +554,7 @@
         </p>
 
         <h3 class="section__heading-keywords">Keywords</h3>
-        <p class="section__keywords">
-          #skrotnisse #terrifying #wthisthis #bertil #ture
-        </p>
+        <p class="section__keywords">#skrotnisse #terrifying #bertil #ture</p>
 
         <h3 class="section__heading-images">Images</h3>
         <div class="gallery">
